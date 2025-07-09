@@ -22,6 +22,6 @@ public class Client {
         String insertedCep = scanner.nextLine();
 
         Cep cep = CepCreator.createCep(insertedCep);
-        System.out.println(cep);
+        if (cep != null) System.out.println(cep);
     }
 }

@@ -1,5 +1,7 @@
 package com.viacep.util;
 
+import com.viacep.exceptions.APIException;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -16,11 +18,17 @@ public class ApiGet {
                     .build();
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
-            return response.body();
-        } catch (IOException e) {
-            System.out.println("Erro tentando conectar a Api");
+            if (response.body().contains("\"erro\": \"true\"")) { //Failed to find CEP
+                throw new APIException("CEP não encontrado");
+            }
+            if (response.statusCode() == 200) return response.body();
+
+            System.out.println("Erro | CEP possívelmente inválido: " + response.statusCode());
+
+        } catch (APIException e) {
+            System.out.println("Erro: "+e.getMessage());
         } catch (Exception e) {
-            System.out.println("Erro tentando conectar a Api");
+            System.out.println("Erro durante a requisição HTTP: "+e.getMessage());
         }
 
         return null;

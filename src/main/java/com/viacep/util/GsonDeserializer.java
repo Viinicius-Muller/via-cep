@@ -10,6 +10,7 @@ public class GsonDeserializer<T> {
 
     public T deserialization(String json, Class<T> tClass) {
         try {
+
             return gson.fromJson(json,tClass);
         } catch (Exception e) {
             System.out.println("Erro ao tentar deserializar JSON para a classe");
