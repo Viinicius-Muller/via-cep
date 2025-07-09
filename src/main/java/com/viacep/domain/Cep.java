@@ -13,42 +13,32 @@ public class Cep {
     private String estado;
     private String uf;
 
-    public Cep(String cep, String rua, String complemento, String bairro, String cidade, String estado, String uf) {
-        this.cep = cep;
-        this.rua = rua;
-        this.complemento = complemento;
-        this.bairro = bairro;
-        this.cidade = cidade;
-        this.estado = estado;
-        this.uf = uf;
-    }
-
     public String getCep() {
-        return cep;
+        return cep == null ? "Não encontrado" : cep;
     }
 
     public String getRua() {
-        return rua;
+        return rua == null ? "Não encontrado" : rua;
     }
 
     public String getComplemento() {
-        return complemento;
+        return complemento == null ? "Não encontrado" : complemento;
     }
 
     public String getBairro() {
-        return bairro;
+        return bairro == null ? "Não encontrado" : bairro;
     }
 
     public String getCidade() {
-        return cidade;
+        return cidade == null ? "Não encontrado" : cidade;
     }
 
     public String getEstado() {
-        return estado;
+        return estado == null ? "Não encontrado" : estado;
     }
 
     public String getUf() {
-        return uf;
+        return uf == null ? "Não encontrado" : uf;
     }
 
     @Override
