@@ -12,19 +12,53 @@ public class Cep {
     private String cidade;
     private String estado;
     private String uf;
-    private String ddd;
+
+    public Cep(String cep, String rua, String complemento, String bairro, String cidade, String estado, String uf) {
+        this.cep = cep;
+        this.rua = rua;
+        this.complemento = complemento;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.estado = estado;
+        this.uf = uf;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public String getRua() {
+        return rua;
+    }
+
+    public String getComplemento() {
+        return complemento;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public String getUf() {
+        return uf;
+    }
 
     @Override
     public String toString() {
-        return "Cep{" +
-                "cep='" + cep + '\'' +
-                ", rua='" + rua + '\'' +
-                ", complemento='" + complemento + '\'' +
-                ", bairro='" + bairro + '\'' +
-                ", cidade='" + cidade + '\'' +
-                ", estado='" + estado + '\'' +
-                ", uf='" + uf + '\'' +
-                ", ddd='" + ddd + '\'' +
-                '}';
+        return "CEP: "+getCep()+"\n"+
+                "Rua: "+getRua()+"\n"+
+                "Complemento: "+getComplemento()+"\n"+
+                "Bairro: "+getBairro()+"\n"+
+                "Cidade: "+getCidade()+"\n"+
+                "Estado: "+getEstado()+"\n"+
+                "UF: "+getUf();
     }
 }
