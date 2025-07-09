@@ -7,6 +7,7 @@ import com.viacep.util.ApiGet;
 import com.viacep.util.CepCreator;
 import com.viacep.util.GsonDeserializer;
 
+import java.net.Socket;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.http.HttpClient;
@@ -18,10 +19,12 @@ public class Client {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws URISyntaxException {
-        System.out.print("Insira o cep a ser testado: ");
-        String insertedCep = scanner.nextLine();
+        System.out.print("Insira o CEP a ser verificado: ");
+        String userCep = scanner.nextLine();
 
-        Cep cep = CepCreator.createCep(insertedCep);
+        Cep cep = CepCreator.createCep(userCep);
         if (cep != null) System.out.println(cep);
+
+        scanner.close();
     }
 }

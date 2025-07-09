@@ -43,10 +43,6 @@ public class Cep {
 
     @Override
     public String toString() {
-        if (cep == null) {
-            return "Não foi possível localizar o CEP";
-        }
-
         return "CEP: "+getCep()+"\n"+
                 "Rua: "+getRua()+"\n"+
                 "Complemento: "+getComplemento()+"\n"+
