@@ -23,7 +23,7 @@ public class ApiGet {
             }
             if (response.statusCode() == 200) return response.body();
 
-            System.out.println("Erro | CEP possívelmente inválido: " + response.statusCode());
+            System.out.println("Erro | CEP inválido: " + response.statusCode());
 
         } catch (APIException e) {
             System.out.println("Erro: "+e.getMessage());
