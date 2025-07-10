@@ -29,7 +29,7 @@ git clone https://github.com/Viinicius-Muller/via-cep.git
 ## Dependências
 
 As dependecias são:
-- [Gson](https://github.com/google/gson>): Biblioteca Java de serialização/desserialização para conversão entre objetos JAVA e JSON
+- [Gson](https://github.com/google/gson): Biblioteca Java de serialização/desserialização para conversão entre objetos JAVA e JSON
 - [ViaCEP](https://viacep.com.br/): API Pública gratuíta para consulta de CEP do Brasil]
 
 ## Contribuições
