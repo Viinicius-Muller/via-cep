@@ -1,6 +1,7 @@
 # Via-CEP
 
-**Via-CEP** verifica em segundos o CEP de seu interesse.
+**Via-CEP** verifica em segundos o CEP de seu interesse.<br>
+[English version](https://github.com/Viinicius-Muller/via-cep/blob/main/README-en.md)
 ![Simple code usage](https://github.com/Viinicius-Muller/via-cep/blob/7c8d4dea6e4ad534ec70840212c7fef6be427034/simple-code.png)
 
 ## Funcionalidades
