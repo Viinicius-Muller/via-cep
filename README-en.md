@@ -30,7 +30,7 @@ Installation steps:
 ## Dependencies
 
 The dependencies are:
-* [Gson](https://github.com/google/gson>): A Java serialization/deserialization library to convert between JAVA objects and JSON.
+* [Gson](https://github.com/google/gson): A Java serialization/deserialization library to convert between JAVA objects and JSON.
 * [ViaCEP](https://viacep.com.br/): Free Public API for consulting Brazilian zip codes.
 
 ## Contributions
