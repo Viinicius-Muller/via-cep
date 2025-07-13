@@ -6,9 +6,10 @@
 
 ## Funcionalidades
 
--Consome uma API Pública para verificar CEPs brasileiros
--Utiliza GSON para a desserialização de Jsons
--Uso e instalação simples
+* Consome uma API Pública para verificar CEPs brasileiros
+* Utiliza GSON para a desserialização de Jsons
+* Uso e instalação simples
+  
 ## Instalação
 
 Passos para a instalação:
